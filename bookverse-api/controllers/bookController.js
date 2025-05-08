@@ -35,7 +35,7 @@ exports.getAllBooks = async (req, res, next) => {
     
     query = query.skip(startIndex).limit(limit);
     
-    // Execute query
+    
     const books = await query;
     
     // Pagination result

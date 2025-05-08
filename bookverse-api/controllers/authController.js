@@ -36,7 +36,7 @@ exports.login = async (req, res, next) => {
       });
     }
     
-    // Check for user
+    
     const user = await User.findOne({ email }).select('+password');
     
     if (!user) {
